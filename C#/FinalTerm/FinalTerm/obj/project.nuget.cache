@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "siOUBhroGX55gg4gDhk6/wOuvnew1pZQ9zXvIWH4b9C9VydtgTTRwQ3Yx8gbQFHMqNK/z2MT7J6PMMnyay7DtA==",
+  "dgSpecHash": "lfgdTCy7tZrlhnxm4ObQbU27x0Xfc0TgZ63+265A4dYRzQJwjcdBOHBU4pOcHhUsE0Fnc0VTOTL8RL8IZtAV0g==",
   "success": true,
-  "projectFilePath": "F:\\Do an\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
+  "projectFilePath": "F:\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

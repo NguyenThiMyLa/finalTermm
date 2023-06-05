@@ -3806,11 +3806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Do an\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
+      "projectUniqueName": "F:\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
       "projectName": "FinalTerm",
-      "projectPath": "F:\\Do an\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
+      "projectPath": "F:\\finalTermm\\C#\\FinalTerm\\FinalTerm\\FinalTerm.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "F:\\Do an\\finalTermm\\C#\\FinalTerm\\FinalTerm\\obj\\",
+      "outputPath": "F:\\finalTermm\\C#\\FinalTerm\\FinalTerm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

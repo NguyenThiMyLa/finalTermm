@@ -87,3 +87,181 @@ F:\FinalTerm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\refint\FinalTerm.dll
 F:\FinalTerm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.pdb
 F:\FinalTerm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.genruntimeconfig.cache
 F:\FinalTerm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\ref\FinalTerm.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\appsettings.Development.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\appsettings.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.exe
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.deps.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.runtimeconfig.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.pdb
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Azure.Core.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Azure.Identity.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Drawing.Common.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Memory.Data.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Runtime.Caching.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Windows.Extensions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.AssemblyReference.cache
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.GeneratedMSBuildEditorConfig.editorconfig
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.AssemblyInfoInputs.cache
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.AssemblyInfo.cs
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.CoreCompileInputs.cache
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.MvcApplicationPartsAssemblyInfo.cs
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.MvcApplicationPartsAssemblyInfo.cache
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.FinalTerm.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.build.FinalTerm.props
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FinalTerm.props
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FinalTerm.props
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.pack.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.build.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.development.json
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\scopedcss\bundle\FinalTerm.styles.css
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.CopyComplete
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\refint\FinalTerm.dll
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.pdb
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.genruntimeconfig.cache
+F:\Do an\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\ref\FinalTerm.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\appsettings.Development.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\appsettings.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.exe
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.deps.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.runtimeconfig.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\FinalTerm.pdb
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Azure.Core.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Azure.Identity.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Drawing.Common.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Memory.Data.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Runtime.Caching.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\System.Windows.Extensions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.AssemblyReference.cache
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.GeneratedMSBuildEditorConfig.editorconfig
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.AssemblyInfoInputs.cache
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.AssemblyInfo.cs
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.CoreCompileInputs.cache
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.MvcApplicationPartsAssemblyInfo.cs
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.MvcApplicationPartsAssemblyInfo.cache
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.FinalTerm.Microsoft.AspNetCore.StaticWebAssets.props
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.build.FinalTerm.props
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FinalTerm.props
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FinalTerm.props
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.pack.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.build.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\staticwebassets.development.json
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\scopedcss\bundle\FinalTerm.styles.css
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.csproj.CopyComplete
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\refint\FinalTerm.dll
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.pdb
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\FinalTerm.genruntimeconfig.cache
+F:\finalTermm\C#\FinalTerm\FinalTerm\obj\Debug\net6.0\ref\FinalTerm.dll
