@@ -2,6 +2,7 @@ import React, {Component, useEffect, useState} from 'react';
 import {variables} from '../Variables';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './user.css';
 import {ToastContainer, toast } from 'react-toastify'
 
 const User = () => {
@@ -48,12 +49,12 @@ const User = () => {
     }, []);
     return(
         <div class="container">
-            <div class="card">
+            <div class="card container_list">
                 <div class="card-header">
                     <h2>Danh sách User</h2>
                 </div>
                 <div class="card-body">
-                    <div>
+                    <div className='top-body'>
                         <Link class="btn btn-success" to="/user/create">Add User (+)</Link>
                         <form onSubmit={handleSubmit}>
                             <label htmlFor="search">Search:</label>
@@ -61,38 +62,40 @@ const User = () => {
                             <button type="submit">Submit</button>
                         </form>
                     </div>
-                    <table class="table table-bordered">
-                        <thead class="bg-dark text-white">
-                            <tr>
-                                <td>FirstName</td>
-                                <td>LastName</td>
-                                <td>Address</td>
-                                <td>PhoneNumber</td>
-                                <td>Email</td>
-                                <td>Edit</td>
-                                <td>Remove</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {   
-                                userList.map((item)=>(
-                                    <tr key={item?.Id}>
-                                        <td>{item?.FirstName}</td>
-                                        <td>{item?.LastName}</td>
-                                        <td>{item?.Address}</td>
-                                        <td>{item?.PhoneNumber}</td>
-                                        <td>{item?.Email}</td>
-                                        <td>
-                                            <Link class="btn btn-primary" to={"/user/edit/"+item?.Id}>Edit</Link>
-                                        </td>
-                                        <td>
-                                            <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Remove</a>
-                                        </td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
+                    <div className="table-height" >
+                        <table class="table table-bordered">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <td>FirstName</td>
+                                    <td>LastName</td>
+                                    <td>Address</td>
+                                    <td>PhoneNumber</td>
+                                    <td>Email</td>
+                                    <td>Edit</td>
+                                    <td>Remove</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {   
+                                    userList.map((item)=>(
+                                        <tr key={item?.Id}>
+                                            <td>{item?.FirstName}</td>
+                                            <td>{item?.LastName}</td>
+                                            <td>{item?.Address}</td>
+                                            <td>{item?.PhoneNumber}</td>
+                                            <td>{item?.Email}</td>
+                                            <td>
+                                                <Link class="btn btn-primary" to={"/user/edit/"+item?.Id}>Edit</Link>
+                                            </td>
+                                            <td>
+                                                <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Remove</a>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

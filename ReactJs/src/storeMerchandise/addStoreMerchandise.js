@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { variables } from '../Variables.js';
 import { ToastContainer, toast } from 'react-toastify';
 import Select from 'react-select';
+import '../App.css';
 
 
 const AddStoreMerchandise = () => {
@@ -69,35 +70,31 @@ const AddStoreMerchandise = () => {
     }
     return (
         <div>
-            <form class="container" onSubmit={handlesubmit}>
-                <div class="row">
-                    <div class="offset-lg-2 col-lg-8">
-                        <div class="card">
-                            <div class="card-header">
-                                <h2>Thêm mới mặt hàng của cửa hàng</h2>
-                            </div>
-                            <div class="card-body">
-                                <div className="App">
-                                    <label>Tên mặt hàng</label>
-                                    <Select
-                                        options={storeMerchandiseLists}
-                                        placeholder="Chọn tên mặt hàng"
-                                        value={storeMerchandiseLists.Id}
-                                        onChange={handleSelect}
-                                        isSearchable={true}
-                                    />
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Xuất xứ</label>
-                                    <input onBlur={e=>validateMadeIn(e.target.value)} placeholder="Xuất xứ của mặt hàng" onChange={e => MadeInChange(e.target.value)} value={MadeIn} class="form-control"></input>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <button class="btn btn-success" type="submit">Lưu</button>
-                                <ToastContainer />
-                            </div>
+            <form class="container_body" onSubmit={handlesubmit}>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Thêm mới mặt hàng của cửa hàng</h2>
+                    </div>
+                    <div class="card-body">
+                        <div className="App">
+                            <label>Tên mặt hàng</label>
+                            <Select
+                                options={storeMerchandiseLists}
+                                placeholder="Chọn tên mặt hàng"
+                                value={storeMerchandiseLists.Id}
+                                onChange={handleSelect}
+                                isSearchable={true}
+                            />
                         </div>
+
+                        <div class="form-group">
+                            <label>Xuất xứ</label>
+                            <input onBlur={e=>validateMadeIn(e.target.value)} placeholder="Xuất xứ của mặt hàng" onChange={e => MadeInChange(e.target.value)} value={MadeIn} class="form-control"></input>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Lưu</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </form>

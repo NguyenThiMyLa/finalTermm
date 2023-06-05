@@ -2,9 +2,56 @@
   text-align: center;
 } */
 
+.container-fluid {
+  background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.AppGlass {
+  display: flex;
+  height: 95vh;
+  width: 98%;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.54);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+.sidebar_left {
+  width: 15%;
+}
+
+.container_right {
+  width: 70%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container_body {
+  width: 50vw;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+
+.container_list {
+  height: 88vh;
+}
+
+.table-height {
+  height: 450px;
+  overflow:scroll;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,13 +60,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  flex-direction: column;
-  align-items: left;
-  color: white;
-  height: 35px;
-}
 
 .App-link {
   color: #61dafb;
@@ -43,7 +83,7 @@ a {
 
 /* LOGIN */
 .container {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .login-title {
@@ -87,7 +127,7 @@ a {
 }
 
 .card-body {
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 

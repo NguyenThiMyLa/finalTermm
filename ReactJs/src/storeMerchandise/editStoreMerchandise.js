@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import {variables} from '../Variables.js';
 import {ToastContainer, toast } from 'react-toastify'
+import '../App.css'
 
 const EditStoreMerchandise = () => {
         const [Name, namechange] = useState('');
@@ -39,30 +40,26 @@ const EditStoreMerchandise = () => {
     }
     return ( 
         <div>
-            <form className="container" onSubmit={handlesubmit}>
-                <div className="row">
-                    <div className="offset-lg-2 col-lg-8">
-                        <div className="card">
-                            <div className="card-header">
-                                <h2>Chỉnh sửa thông tin cửa hàng</h2>
-                            </div>
-                            <div className="card-body">
-                                <div className="form-group">
-                                    <label>Tên mặt hàng</label>
-                                    <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control" disabled></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>Xuất xứ</label>
-                                    <input onChange={e=>MadeInChange(e.target.value)} value={MadeIn} className="form-control"></input>
-                                </div>
-                            </div>
-                            <div className="card-footer">
-                                <button className="btn btn-success" type="submit">Lưu</button>
-                                <ToastContainer />
-                            </div>
-                        </div> 
+            <form className="container_body" onSubmit={handlesubmit}>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Chỉnh sửa thông tin cửa hàng</h2>
                     </div>
-                </div>
+                    <div className="card-body">
+                        <div className="form-group">
+                            <label>Tên mặt hàng</label>
+                            <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control" disabled></input>
+                        </div>
+                        <div className="form-group">
+                            <label>Xuất xứ</label>
+                            <input onChange={e=>MadeInChange(e.target.value)} value={MadeIn} className="form-control"></input>
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-success" type="submit">Lưu</button>
+                        <ToastContainer />
+                    </div>
+                </div> 
             </form>
         </div>
     );

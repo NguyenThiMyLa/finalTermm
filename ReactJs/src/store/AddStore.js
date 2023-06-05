@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { variables } from '../Variables.js';
 import { ToastContainer, toast } from 'react-toastify';
 import Select from 'react-select';
+import '../App.css'
 
 
 
@@ -117,55 +118,51 @@ const AddStore = () => {
     }
     return (
         <div>
-            <form class="container" onSubmit={handlesubmit}>
-                <div class="row">
-                    <div class="offset-lg-2 col-lg-8">
-                        <div class="card">
-                            <div class="card-header">
-                                <h2>Thêm mới cửa hàng</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label>Tên cửa hàng</label>
-                                    <input onBlur={e=>validateName(e.target.value)} placeholder="Tên cửa hàng" onChange={e => namechange(e.target.value)} value={name} class="form-control"></input>
-                                </div>
-                                <div className="App">
-                                <label>Chủ cửa hàng</label>
-                                    <Select
-                                        options={userLists}
-                                        placeholder="Chọn chủ cửa hàng"
-                                        value={userLists.Id}
-                                        onChange={handleSelect}
-                                        isSearchable={true}
-                                    />
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Địa chỉ</label>
-                                    <input onBlur={e=>validateAddress(e.target.value)} placeholder="Địa chỉ của cửa hàng" onChange={e => addresschange(e.target.value)} value={address} class="form-control"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label>Số điện thoại </label>
-                                    <input onBlur={e=>validatePhoneNumber(e.target.value)} placeholder="Số điện thoại của cửa hàng" onChange={e => phonenumberchange(e.target.value)} value={phonenumber} class="form-control"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label>Ngày đăng ký bắt đầu kinh doanh</label>
-                                    <input onBlur={e=>validateBusinessStartDate(e.target.value)} placeholder="Nhập ngày đăng ký bắt đầu kinh doanh của cửa hàng" onChange={e => BusinessStartDateChange(e.target.value)} value={BusinessStartDate} class="form-control"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label>Giấy phép kinh doanh</label>
-                                    <input onBlur={e=>validateBusinessLicense(e.target.value)} placeholder="Nhập giấy phép kinh doanh của cửa hàng" onChange={e => BusinessLicenseChange(e.target.value)} value={BusinessLicense} class="form-control"></input>
-                                </div>
-                                <div class="form-group">
-                                    <label>Mã số thuế</label>
-                                    <input onBlur={e=>validateTaxCode(e.target.value)} placeholder="Nhập mã số thuế của cửa hàng" onChange={e => TaxCodeChange(e.target.value)} value={TaxCode} class="form-control"></input>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <button class="btn btn-success" type="submit">Lưu</button>
-                                <ToastContainer />
-                            </div>
+            <form class="container_body" onSubmit={handlesubmit}>
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Thêm mới cửa hàng</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Tên cửa hàng</label>
+                            <input onBlur={e=>validateName(e.target.value)} placeholder="Tên cửa hàng" onChange={e => namechange(e.target.value)} value={name} class="form-control"></input>
                         </div>
+                        <div className="App">
+                        <label>Chủ cửa hàng</label>
+                            <Select
+                                options={userLists}
+                                placeholder="Chọn chủ cửa hàng"
+                                value={userLists.Id}
+                                onChange={handleSelect}
+                                isSearchable={true}
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Địa chỉ</label>
+                            <input onBlur={e=>validateAddress(e.target.value)} placeholder="Địa chỉ của cửa hàng" onChange={e => addresschange(e.target.value)} value={address} class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại </label>
+                            <input onBlur={e=>validatePhoneNumber(e.target.value)} placeholder="Số điện thoại của cửa hàng" onChange={e => phonenumberchange(e.target.value)} value={phonenumber} class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày đăng ký bắt đầu kinh doanh</label>
+                            <input onBlur={e=>validateBusinessStartDate(e.target.value)} placeholder="Nhập ngày đăng ký bắt đầu kinh doanh của cửa hàng" onChange={e => BusinessStartDateChange(e.target.value)} value={BusinessStartDate} class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Giấy phép kinh doanh</label>
+                            <input onBlur={e=>validateBusinessLicense(e.target.value)} placeholder="Nhập giấy phép kinh doanh của cửa hàng" onChange={e => BusinessLicenseChange(e.target.value)} value={BusinessLicense} class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Mã số thuế</label>
+                            <input onBlur={e=>validateTaxCode(e.target.value)} placeholder="Nhập mã số thuế của cửa hàng" onChange={e => TaxCodeChange(e.target.value)} value={TaxCode} class="form-control"></input>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Lưu</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </form>

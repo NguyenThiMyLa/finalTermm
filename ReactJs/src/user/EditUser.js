@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import {variables} from '../Variables.js';
 import {ToastContainer, toast } from 'react-toastify'
+import '../App.css';
 
 const EditUser = () => {
     const [FirstName, firstnamechange] = useState('');
@@ -41,40 +42,36 @@ const EditUser = () => {
     }
     return ( 
         <div>
-            <form className="container" onSubmit={handlesubmit}>
-                <div className="row">
-                    <div className="offset-lg-2 col-lg-8">
-                        <div className="card">
-                            <div className="card-header">
-                                <h2>Chỉnh sửa thông tin người dùng</h2>
-                            </div>
-                            <div className="card-body">
-                                <div className="form-group">
-                                    <label>FirstName</label>
-                                    <input onChange={e=>firstnamechange(e.target.value)} value={FirstName}  className="form-control"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>LastName</label>
-                                    <input onChange={e=>lastnamechange(e.target.value)} value={LastName}  className="form-control"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>Address</label>
-                                    <input onChange={e=>addresschange(e.target.value)} value={Address}  className="form-control"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>PhoneNumber</label>
-                                    <input onChange={e=>phonenumberchange(e.target.value)} value={PhoneNumber}  className="form-control"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>Email</label>
-                                    <input onChange={e=>emailchange(e.target.value)} value={Email}  className="form-control"></input>
-                                </div>
-                            </div>
-                            <div className="card-footer">
-                                <button className="btn btn-success" type="submit">Save</button>
-                                <ToastContainer />
-                            </div>
-                        </div> 
+            <form className="container_body" onSubmit={handlesubmit}>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Chỉnh sửa thông tin User</h2>
+                    </div>
+                    <div className="card-body">
+                        <div className="form-group">
+                            <label>FirstName</label>
+                            <input onChange={e=>firstnamechange(e.target.value)} value={FirstName}  className="form-control"></input>
+                        </div>
+                        <div className="form-group">
+                            <label>LastName</label>
+                            <input onChange={e=>lastnamechange(e.target.value)} value={LastName}  className="form-control"></input>
+                        </div>
+                        <div className="form-group">
+                            <label>Address</label>
+                            <input onChange={e=>addresschange(e.target.value)} value={Address}  className="form-control"></input>
+                        </div>
+                        <div className="form-group">
+                            <label>PhoneNumber</label>
+                            <input onChange={e=>phonenumberchange(e.target.value)} value={PhoneNumber}  className="form-control"></input>
+                        </div>
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input onChange={e=>emailchange(e.target.value)} value={Email}  className="form-control"></input>
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-success" type="submit">Save</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </form>

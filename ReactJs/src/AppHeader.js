@@ -19,14 +19,13 @@ const AppHeader = () => {
     return ( 
         <div> {menuvisible &&
             <div className="App-header">
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact</Link>
+                {/* <Link to="/">Home</Link>
                 <Link to="/user">Quản lý User</Link>
                 <Link style={{float:'right'}} to="/login">Logout</Link>
                 <Link to="/store">Quản lý cửa hàng</Link>
                 <Link to="/merchandise">Quản lý thực phẩm</Link>
                 <Link to="/appraisal">Appraisal</Link>
-                <Link to="/notAppraisal">Not Appraisal</Link>
+                <Link to="/notAppraisal">Not Appraisal</Link> */}
             </div>
             }
         </div>

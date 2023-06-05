@@ -37,7 +37,7 @@ const Appraisal = () => {
                 <div class="card-header store-title">
                     <h2>Quản lý thẩm định định kỳ: Đã kiểm tra</h2>
                 </div>
-                <div class="card-body">
+                <div className='table-height'>
                     <table class="table table-bordered">
                         <thead class="bg-dark text-white">
                             <tr>

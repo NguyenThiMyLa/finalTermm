@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import {variables} from '../Variables.js';
 import {ToastContainer, toast } from 'react-toastify'
+import '../App.css';
 
 const EditStore = () => {
         const [Name, namechange] = useState('');
@@ -33,26 +34,22 @@ const EditStore = () => {
     }
     return ( 
         <div>
-            <form className="container" onSubmit={handlesubmit}>
-                <div className="row">
-                    <div className="offset-lg-2 col-lg-8">
-                        <div className="card">
-                            <div className="card-header">
-                                <h2>Chỉnh sửa thông tin hàng hóa</h2>
-                            </div>
-                            <div className="card-body">
-                                <div className="form-group">
-                                    <label>Tên hàng hóa</label>
-                                    <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control"></input>
-                                </div>
-                            </div>
-                            <div className="card-footer">
-                                <button className="btn btn-success" type="submit">Lưu</button>
-                                <ToastContainer />
-                            </div>
-                        </div> 
+            <form className="container_body" onSubmit={handlesubmit}>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Chỉnh sửa thông tin hàng hóa</h2>
                     </div>
-                </div>
+                    <div className="card-body">
+                        <div className="form-group">
+                            <label>Tên hàng hóa</label>
+                            <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control"></input>
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-success" type="submit">Lưu</button>
+                        <ToastContainer />
+                    </div>
+                </div> 
             </form>
         </div>
      );

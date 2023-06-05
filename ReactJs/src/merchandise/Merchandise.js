@@ -2,6 +2,7 @@ import React, {Component, useEffect, useState} from 'react';
 import {variables} from '../Variables';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './merchandise.css'
 import {ToastContainer, toast } from 'react-toastify';
 
 
@@ -46,7 +47,7 @@ const Merchandise = () => {
     }, [image])
     return(
         <div class="container">
-            <div class="card">
+            <div class="card container_list">
                 <div class="card-header store-title">
                     <h2>Danh sách hàng hóa có trong chợ</h2>
                 </div>
@@ -54,42 +55,44 @@ const Merchandise = () => {
                     <div>
                         <Link class="btn btn-success btn-addStore" to="/merchandise/create">Thêm hàng hóa (+)</Link>
                     </div>
-                    <table class="table table-bordered">
-                        <thead class="bg-dark text-white">
-                            <tr>
-                                <td class="title-tableStore">Tên hàng hóa</td>
-                                <td class="title-tableStore">Hình ảnh</td>
-                                <td class="title-tableStore">Chỉnh sửa</td>
-                                <td class="title-tableStore">Xóa</td>
-                            </tr>
-                        </thead>
+                    <div className="table-height">
+                        <table class="table table-bordered">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <td class="title-tableStore">Tên hàng hóa</td>
+                                    <td class="title-tableStore">Hình ảnh</td>
+                                    <td class="title-tableStore">Chỉnh sửa</td>
+                                    <td class="title-tableStore">Xóa</td>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                            {   
-                                merchandiseList.map((item)=>(
-                                    <tr key={item?.Id}>
-                                        <td class="body-tableStore">{item?.Name}</td>
-                                        <td>
-                                            <div>
-                                                <input  type="file"
-                                                        onChange={handleImage}
-                                                />
-                                                {image && (
-                                                    <img src={image.preview} alt="" width="30px" height="30px"/>
-                                                )}
-                                            </div>
-                                        </td>
-                                        <td class="body-tableStore">
-                                            <Link class="btn btn-primary" to={"/merchandise/edit/"+item?.Id}>Chỉnh sửa</Link>
-                                        </td>
-                                        <td class="body-tableStore">
-                                            <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
+                            <tbody>
+                                {   
+                                    merchandiseList.map((item)=>(
+                                        <tr key={item?.Id}>
+                                            <td class="body-tableStore">{item?.Name}</td>
+                                            <td>
+                                                <div>
+                                                    <input  type="file"
+                                                            onChange={handleImage}
+                                                    />
+                                                    {image && (
+                                                        <img src={image.preview} alt="" width="30px" height="30px"/>
+                                                    )}
+                                                </div>
+                                            </td>
+                                            <td class="body-tableStore">
+                                                <Link class="btn btn-primary" to={"/merchandise/edit/"+item?.Id}>Chỉnh sửa</Link>
+                                            </td>
+                                            <td class="body-tableStore">
+                                                <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Xóa</a>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
