@@ -46,6 +46,7 @@ const Appraisal = () => {
                                 <td class="title-tableStore">Người kiểm tra</td>
                                 <td class="title-tableStore">Ngày kiểm tra</td>
                                 <td class="title-tableStore">Chỉnh sửa</td>
+                                <td class="title-tableStore">Chi tiết thẩm định</td>
                                 <td class="title-tableStore">Xóa</td>
                             </tr>
                         </thead>
@@ -59,7 +60,10 @@ const Appraisal = () => {
                                         <td class="body-tableStore">{item?.LastName}</td>
                                         <td class="body-tableStore">{item?.DateCheck}</td>
                                         <td class="body-tableStore">
-                                            <Link class="btn btn-primary" to={"/appraisal/edit/"+item?.Id}>Chi tiết thẩm định</Link>
+                                            <Link class="btn btn-primary" to={"/appraisal/edit/"+item?.Id}>Chỉnh sửa</Link>
+                                        </td>
+                                        <td class="body-tableStore">
+                                            <Link class="btn btn-primary" to={"/appraisal/storeAppraisalDetail/"+item?.Id}>Chi tiết thẩm định</Link>
                                         </td>
                                         <td class="body-tableStore">
                                             <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Xóa</a>

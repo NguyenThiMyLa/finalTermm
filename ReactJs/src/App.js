@@ -27,6 +27,8 @@ import EditMerchandise from './merchandise/EditMerchandise';
 import Appraisal from './appraisal/Appraisal';
 import EditAppraisal from './appraisal/editAppraisal';
 import NotAppraisal from './notAppraisal/notAppraisal';
+import EvaluateStore from './evaluateStore/evaluateStore';
+import StoreAppraisalDetail from './storeAppraisalDetail/storeAppraisalDetail';
 import { ToastContainer} from 'react-toastify';
 
 function App() {
@@ -54,6 +56,9 @@ function App() {
                 <Route path='appraisal' element={<Appraisal/>}></Route>
                 <Route path='appraisal/edit/:Id' element={<EditAppraisal/>}></Route>
                 <Route path='notAppraisal' element={<NotAppraisal/>}></Route>
+                <Route path='evaluateStore' element={<EvaluateStore/>}></Route>
+                <Route path='store/evaluateStore/:Id' element={<EvaluateStore/>}></Route>
+                <Route path='appraisal/storeAppraisalDetail/:Id' element={<StoreAppraisalDetail/>}></Route>
                 <Route path='*' element={<Error></Error>}></Route>
               </Routes>
             </BrowserRouter>

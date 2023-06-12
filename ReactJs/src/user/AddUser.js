@@ -116,58 +116,57 @@ const AddUser = () => {
     return ( 
         <div>
             <form className="container" onSubmit={handlesubmit}>
-                <div className="row">
-                    <div className="offset-lg-2 col-lg-8">
-                        <div className="register-title">
-                            <h2>Đăng ký tài khoản</h2>
+                <div className="offset-lg-2">
+                    <div className="register-title">
+                        <h2>Đăng ký tài khoản</h2>
+                    </div>
+                    <div className="card-body-register">
+                        <div className="form-group register-input">
+                            <label class="">Tên đăng nhập<span className="text-danger">*</span></label>
+                            <input placeholder="Tên đăng nhập" value={username} onBlur={e=>validateuser(e.target.value)} onChange={e => usernamechange(e.target.value)} className="form-control"></input>
                         </div>
-                        <div className="card-body-register">
-                            <div className="form-group register-input">
-                                <label class="">Tên đăng nhập<span className="text-danger">*</span></label>
-                                <input placeholder="Tên đăng nhập" value={username} onBlur={e=>validateuser(e.target.value)} onChange={e => usernamechange(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <label>Họ<span className="text-danger">*</span></label>
-                                <input placeholder="Họ" value={firstname} onChange={e => firstnamechange(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <label>Tên<span className="text-danger">*</span></label>
-                                <input placeholder="Tên" value={lastname} onChange={e => lastnamechange(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <label>Email <span className="text-danger">*</span></label>
-                                <input placeholder="Email" value={email} onBlur={e=>validateemail(e.target.value)} onChange={e => emailchange(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <label>Mật khẩu<span className="text-danger">*</span></label>
-                                <input placeholder="Mật khẩu" value={password} onChange={e => passwordchange(e.target.value)} className="form-control" type="password"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <label>Số điện thoại</label>
-                                <input placeholder="Số điện thoại" value={phonenumber} onChange={e => phonenumberchange(e.target.value)} className="form-control"></input>
-                            </div>
-                            <div className="form-group register-input">
-                                <text>Địa chỉ</text>
-                                <textarea placeholder="Địa chỉ" value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
-                            </div>
-                            <div className="App">
-                                <label>Role</label>
-                                    <Select
-                                        options={roleLists}
-                                        placeholder="Chọn chủ cửa hàng"
-                                        value={roleLists.Id}
-                                        onChange={handleSelect}
-                                        isSearchable={true}
-                                    />
-                            </div>
-                            <div className="form-group register-input">
-                                <input value={role} onChange={e => rolechange(e.target.value)} type="hidden" className="form-control"></input>
-                            </div>
+                        <div className="form-group register-input">
+                            <label>Họ<span className="text-danger">*</span></label>
+                            <input placeholder="Họ" value={firstname} onChange={e => firstnamechange(e.target.value)} className="form-control"></input>
                         </div>
-                        <div className="register-button">
-                            <button className="btn btn-success" type="submit">Đăng ký</button>
-                            <ToastContainer />
+                        <div className="form-group register-input">
+                            <label>Tên<span className="text-danger">*</span></label>
+                            <input placeholder="Tên" value={lastname} onChange={e => lastnamechange(e.target.value)} className="form-control"></input>
                         </div>
+                        <div className="form-group register-input">
+                            <label>Email <span className="text-danger">*</span></label>
+                            <input placeholder="Email" value={email} onBlur={e=>validateemail(e.target.value)} onChange={e => emailchange(e.target.value)} className="form-control"></input>
+                        </div>
+                        <div className="form-group register-input">
+                            <label>Mật khẩu<span className="text-danger">*</span></label>
+                            <input placeholder="Mật khẩu" value={password} onChange={e => passwordchange(e.target.value)} className="form-control" type="password"></input>
+                        </div>
+                        <div className="form-group register-input">
+                            <label>Số điện thoại</label>
+                            <input placeholder="Số điện thoại" value={phonenumber} onChange={e => phonenumberchange(e.target.value)} className="form-control"></input>
+                        </div>
+                        <div className="form-group register-input">
+                            <label>Địa chỉ</label>
+                            <textarea placeholder="Địa chỉ" value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
+                        </div>
+                        <div className="App select_item register-input">
+                            <label>Role</label>
+                                <Select
+                                    className="select_item_1"
+                                    options={roleLists}
+                                    placeholder="Chọn role"
+                                    value={roleLists.Id}
+                                    onChange={handleSelect}
+                                    isSearchable={true}
+                                />
+                        </div>
+                        <div className="form-group register-input">
+                            <input value={role} onChange={e => rolechange(e.target.value)} type="hidden" className="form-control"></input>
+                        </div>
+                    </div>
+                    <div className="register-button">
+                        <button className="btn btn-success" type="submit">Đăng ký</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </form>

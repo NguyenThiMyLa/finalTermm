@@ -1,23 +1,23 @@
-import React, {Component, useEffect, useState} from 'react';
-import {variables} from '../Variables';
+import React, { Component, useEffect, useState } from 'react';
+import { variables } from '../Variables';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './user.css';
-import {ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify'
 
 const User = () => {
-    const[userList, userUpdate] = useState([null]);
+    const [userList, userUpdate] = useState([null]);
     const [firstname, firstnamechange] = useState('');
     const [lastname, lastnamechange] = useState('');
     const [email, emailchange] = useState('');
-    const[inputSearch, setInputSearch] = useState('');
+    const [inputSearch, setInputSearch] = useState('');
     const [data, setData] = useState([]);
-    const navigate=useNavigate();
-    const handleRemove=(Id)=> {
-        if(window.confirm('Bạn có muốn xóa người dùng này không?')) {
-            fetch(variables.API_URL+'user/'+Id,{
+    const navigate = useNavigate();
+    const handleRemove = (Id) => {
+        if (window.confirm('Bạn có muốn xóa người dùng này không?')) {
+            fetch(variables.API_URL + 'user/' + Id, {
                 method: "DELETE"
-            }).then(res=> {
+            }).then(res => {
                 toast.success('Xóa thành công');
                 navigate(0);
             }).catch((err) => {
@@ -30,24 +30,27 @@ const User = () => {
         setInputSearch(event.target.value);
     };
 
-    const handleSubmit = event => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(variables.API_URL+'user') 
-            .then(response => response.json())
-            .then(data => setData(data))
-            .catch(error => console.error(error));
-        };
-    useEffect(()=> {
-        fetch(variables.API_URL+'user')
-        .then(res => {
-            return res.json();
-        }).then(resp=>{
-            userUpdate(resp);
-        }).catch((err)=> {
-            console.log(err.message);
-        })
+        fetch(variables.API_URL + `user/searchUser/${inputSearch}`)
+            .then((response) => response.json())
+            .then((data) => {
+                userUpdate(data);
+                console.log(data);
+            })
+            .catch((error) => console.error(error));
+    };
+    useEffect(() => {
+        fetch(variables.API_URL + 'user')
+            .then(res => {
+                return res.json();
+            }).then(resp => {
+                userUpdate(resp);
+            }).catch((err) => {
+                console.log(err.message);
+            })
     }, []);
-    return(
+    return (
         <div class="container">
             <div class="card container_list">
                 <div class="card-header">
@@ -76,8 +79,8 @@ const User = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {   
-                                    userList.map((item)=>(
+                                {
+                                    userList.map((item) => (
                                         <tr key={item?.Id}>
                                             <td>{item?.FirstName}</td>
                                             <td>{item?.LastName}</td>
@@ -85,10 +88,10 @@ const User = () => {
                                             <td>{item?.PhoneNumber}</td>
                                             <td>{item?.Email}</td>
                                             <td>
-                                                <Link class="btn btn-primary" to={"/user/edit/"+item?.Id}>Edit</Link>
+                                                <Link class="btn btn-primary" to={"/user/edit/" + item?.Id}>Edit</Link>
                                             </td>
                                             <td>
-                                                <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Remove</a>
+                                                <a onClick={() => { handleRemove(item.Id) }} class="btn btn-danger">Remove</a>
                                             </td>
                                         </tr>
                                     ))

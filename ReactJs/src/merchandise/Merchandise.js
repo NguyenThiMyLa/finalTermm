@@ -8,6 +8,7 @@ import {ToastContainer, toast } from 'react-toastify';
 
 const Merchandise = () => {
     const[merchandiseList, merchandiseUpdate] = useState([null]);
+    const [inputSearch, setInputSearch] = useState('');
     const[image, setImage] = useState();
     const navigate=useNavigate();
     const handleRemove=(Id)=> {
@@ -28,6 +29,21 @@ const Merchandise = () => {
         file.preview = URL.createObjectURL(file)
         setImage(file);
     }
+
+    const handleSearch = event => {
+        setInputSearch(event.target.value);
+    };
+    const handleSubmit = (event) => {
+        console.log(1);
+        event.preventDefault();
+        fetch(variables.API_URL + `merchandise/searchMerchandise/${inputSearch}`)
+            .then((response) => response.json())
+            .then((data) => {
+                merchandiseUpdate(data);
+                console.log(data);
+            })
+            .catch((error) => console.error(error));
+    };
 
     useEffect(()=> {
         fetch(variables.API_URL+'merchandise')
@@ -54,6 +70,11 @@ const Merchandise = () => {
                 <div class="card-body">
                     <div>
                         <Link class="btn btn-success btn-addStore" to="/merchandise/create">Thêm hàng hóa (+)</Link>
+                        <form onSubmit={handleSubmit}>
+                            <label htmlFor="search">Search:</label>
+                            <input placeholder='Tìm kiếm' type="text" id="search" value={inputSearch} onChange={handleSearch} />
+                            <button type="submit">Submit</button>
+                        </form>
                     </div>
                     <div className="table-height">
                         <table class="table table-bordered">

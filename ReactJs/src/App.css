@@ -1,6 +1,3 @@
-/* .App {
-  text-align: center;
-} */
 
 .container-fluid {
   background: linear-gradient(
@@ -130,16 +127,6 @@ a {
   margin-left: 20px;
 }
 
-
-/* REGISTER */
-.register-input {
-  display: flex;
-  margin-top: 10px;
-}
-
-.card-body-register label {
-  width: 20%;
-}
 
 .card-body-register text {
   width: 20%;

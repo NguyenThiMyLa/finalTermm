@@ -61,44 +61,40 @@ const EditAppraisal = () => {
     }
     return ( 
         <div>
-            <form className="container" onSubmit={handlesubmit}>
-                <div className="row">
-                    <div className="offset-lg-2 col-lg-8">
-                        <div className="card">
-                            <div className="card-header">
-                                <h2>Chỉnh sửa thông tin cửa hàng</h2>
-                            </div>
-                            <div className="card-body">
-                                <div className="form-group">
-                                    <label>Tên cửa hàng</label>
-                                    <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control" disabled></input>
-                                </div>
-                                <div className="form-group">
-                                    <label>Địa chỉ</label>
-                                    <input onChange={e=>AddressChange(e.target.value)} value={Address}  className="form-control" disabled></input>
-                                </div>
-                                <div className="App">
-                                <label>Người kiểm tra</label>
-                                    <Select
-                                        options={StaffLists}
-                                        placeholder="Chọn nhân viên kiểm tra"
-                                        value={StaffLists.LastName}
-                                        onChange={handleSelect}
-                                        isSearchable={true}
-                                    />
-                            </div>
-                                <div className="form-group">
-                                    <label>Ngày kiểm tra</label>
-                                    <input onChange={e=>DateCheckChange(e.target.value)} value={DateCheck}  className="form-control"></input>
-                                </div>
-                            </div>
-                            <div className="card-footer">
-                                <button className="btn btn-success" type="submit">Lưu</button>
-                                <ToastContainer />
-                            </div>
-                        </div> 
+            <form className="container_body" onSubmit={handlesubmit}>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Chỉnh sửa thông tin cửa hàng đã thẩm định</h2>
                     </div>
-                </div>
+                    <div className="card-body">
+                        <div className="form-group">
+                            <label>Tên cửa hàng</label>
+                            <input onChange={e=>namechange(e.target.value)} value={Name}  className="form-control" disabled></input>
+                        </div>
+                        <div className="form-group">
+                            <label>Địa chỉ</label>
+                            <input onChange={e=>AddressChange(e.target.value)} value={Address}  className="form-control" disabled></input>
+                        </div>
+                        <div className="App">
+                        <label>Người kiểm tra</label>
+                            <Select
+                                options={StaffLists}
+                                placeholder="Chọn nhân viên kiểm tra"
+                                value={StaffLists.LastName}
+                                onChange={handleSelect}
+                                isSearchable={true}
+                            />
+                    </div>
+                        <div className="form-group">
+                            <label>Ngày kiểm tra</label>
+                            <input onChange={e=>DateCheckChange(e.target.value)} value={DateCheck}  className="form-control"></input>
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-success" type="submit">Lưu</button>
+                        <ToastContainer />
+                    </div>
+                </div> 
             </form>
         </div>
     );
