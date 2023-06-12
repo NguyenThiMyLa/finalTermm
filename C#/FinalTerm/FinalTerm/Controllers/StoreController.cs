@@ -82,6 +82,39 @@ namespace WebApplication1.Controllers
             return new JsonResult(table);
         }
 
+        [HttpGet("searchStore/{dataSearch}")]
+        public JsonResult SearchUser(string dataSearch)
+
+        {
+            string query = @"
+                            select Id, Name, Address, PhoneNumber, BusinessLicense, TaxCode, BusinessStartDate
+                            from [dbo].[Store] 
+                            where 1=1 
+                            " + "and Name LIKE '%" + dataSearch + "%' or Address LIKE '%" + dataSearch + "%'" + "or PhoneNumber LIKE '%" + dataSearch + "%'"
+                            + "or BusinessLicense LIKE '%" + dataSearch + "%'" + "or TaxCode LIKE '%" + dataSearch + "%'" + "or BusinessStartDate LIKE '%" + dataSearch + "%'";
+
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("FinalTermAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    if (dataSearch != null && dataSearch != " ")
+                    {
+                        myCommand.Parameters.AddWithValue("@dataSearch", dataSearch);
+                    }
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+
+            return new JsonResult(table);
+        }
+
         [HttpPost]
 
         public JsonResult Post(Store emp)
@@ -162,8 +195,10 @@ namespace WebApplication1.Controllers
         public JsonResult Delete(string id)
         {
             string query = @"
-                           delete from dbo.Store
-                            where Id=@Id
+                            delete from dbo.StoreMerchandise
+                            where StoreId=@Id
+                            delete from dbo.Store
+                            where Id=@Id                           
                             ";
 
             DataTable table = new DataTable();

@@ -82,6 +82,38 @@ namespace WebApplication1.Controllers
             return new JsonResult(table);
         }
 
+        [HttpGet("searchMerchandise/{dataSearch}")]
+        public JsonResult SearchUser(string dataSearch)
+
+        {
+            string query = @"
+                            select * from
+                            dbo.Merchandise 
+                            where 1=1 
+                            " + "and Name LIKE '%" + dataSearch + "%'";
+
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("FinalTermAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    if (dataSearch != null && dataSearch != " ")
+                    {
+                        myCommand.Parameters.AddWithValue("@dataSearch", dataSearch);
+                    }
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+
+            return new JsonResult(table);
+        }
+
         [HttpPost]
 
         public JsonResult Post(Merchandise emp)
@@ -143,7 +175,9 @@ namespace WebApplication1.Controllers
         public JsonResult Delete(string id)
         {
             string query = @"
-                           delete from dbo.Merchandise
+                            delete from dbo.StoreMerchandise
+                            where MerchandiseId=@Id
+                            delete from dbo.Merchandise
                             where Id=@Id
                             ";
 

@@ -61,13 +61,10 @@ namespace WebApplication1.Controllers
         {
             string query = @"
                             select Id, FirstName, LastName, Address, PhoneNumber, Email, RoleId, IsActive
-                            from [dbo].[User]
-                            where 1=1
-                            ";
-            if (dataSearch != null && dataSearch != " ")
-            {
-                query = query + " and FirstName like '%@dataSearch%' or LastName like '%@dataSearch%' or Email like '%@dataSearch%' ";
-            }
+                            from [dbo].[User] 
+                            where 1=1 
+                            " + "and FirstName LIKE '%" + dataSearch + "%' or LastName LIKE '%" + dataSearch + "%'" + "or Email LIKE '%" + dataSearch + "%'";
+
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("FinalTermAppCon");
             SqlDataReader myReader;
@@ -249,7 +246,7 @@ namespace WebApplication1.Controllers
                     myCommandAccount.Parameters.AddWithValue("@Id", id);
                     int resultAccount = myCommandAccount.ExecuteNonQuery();
                     int resultUser = 0;
-                    if (resultAccount > 0)
+                    if (resultAccount == 0)
                     {
                         myCommandUser.Parameters.AddWithValue("@Id", id);
                         resultUser = myCommandUser.ExecuteNonQuery();
