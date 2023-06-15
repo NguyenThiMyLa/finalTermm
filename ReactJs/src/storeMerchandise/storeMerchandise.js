@@ -2,6 +2,7 @@ import React, {Component, useEffect, useState} from 'react';
 import {variables} from '../Variables';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './storeMerchandise.css';
 import {ToastContainer, toast } from 'react-toastify';
 
 
@@ -36,7 +37,7 @@ const StoreMerchandise = () => {
     }, []);
     return(
         <div class="container">
-            <div class="card">
+            <div class="card container_list">
                 <div class="card-header store-title">
                     <h2>Danh sách mặt hàng của cửa hàng</h2>
                 </div>
@@ -44,37 +45,36 @@ const StoreMerchandise = () => {
                     <div>
                         <Link class="btn btn-success btn-addStore" to="/store/storeMerchandise/create">Thêm mặt hàng (+)</Link>
                     </div>
-                    <table class="table table-bordered">
-                        <thead class="bg-dark text-white">
-                            <tr>
-                                <td class="title-tableStore">Tên mặt hàng</td>
-                                <td class="title-tableStore">Xuất xứ</td>
-                                <td class="title-tableStore">Đánh giá</td>
-                                <td class="title-tableStore">Chỉnh sửa</td>
-                                <td class="title-tableStore">Xóa</td>
-                            </tr>
-                        </thead>
+                    <div className='table-height'>
+                        <table class="table table-bordered">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <td class="title-tableStore">Tên mặt hàng</td>
+                                    <td class="title-tableStore">Xuất xứ</td>
+                                    <td class="title-tableStore">Chỉnh sửa</td>
+                                    <td class="title-tableStore">Xóa</td>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                            {   
-                                storeMerchandiseList.map((item)=>(
-                                    <tr key={item?.Id}>
-                                        <td class="body-tableStore">{item?.Name}</td>
-                                        <td class="body-tableStore">{item?.MadeIn}</td>
-                                        <td class="body-tableStore">
-                                            <Link class="btn btn-primary" to={"/store/storeMerchandise/edit/"+item?.Id}>Đánh giá</Link>
-                                        </td>
-                                        <td class="body-tableStore">
-                                            <Link class="btn btn-primary" to={"/store/storeMerchandise/edit/"+item?.Id}>Chỉnh sửa</Link>
-                                        </td>
-                                        <td class="body-tableStore">
-                                            <a onClick={()=>{handleRemove(item?.Id)}} class="btn btn-danger">Xóa</a>
-                                        </td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>
-                    </table>
+                            <tbody>
+                                {   
+                                    storeMerchandiseList.map((item)=>(
+                                        <tr key={item?.Id}>
+                                            <td class="body-tableStore">{item?.Name}</td>
+                                            <td class="body-tableStore">{item?.MadeIn}</td>
+                                            <td class="body-tableStore">
+                                                <Link class="btn btn-primary" to={"/store/storeMerchandise/edit/"+item?.Id}>Chỉnh sửa</Link>
+                                            </td>
+                                            <td class="body-tableStore">
+                                                <a onClick={()=>{handleRemove(item?.Id)}} class="btn btn-danger">Xóa</a>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
         </div>

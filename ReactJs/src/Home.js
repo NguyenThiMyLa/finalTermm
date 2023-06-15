@@ -1,23 +1,14 @@
 import { useEffect, useState } from "react";
+import './App.css';
 
 const Home = () => {
-    const HandleClick=()=> {
-        headerChange('React JS');
-        //console.log(pageTitle);
-    }
-    //let pageTitle='React JS 18.2 Tutorial';
-    const[pageTitle, titleChange] = useState('React JS 18.2 Tutorial' )
-    const[pageHeader, headerChange] = useState('React JS' )
-    const obj={name: 'MyLa'}
-        useEffect(()=> {
-        },[pageTitle,pageHeader ]);
+        
     return ( 
-        <div>
-            <h2>{pageTitle}</h2>
-            <h2>{obj.name}</h2>
-            <button class="btn btn-primary" onClick={()=> HandleClick()}>Click Here</button>
+        <div className="home">
+            <h2>HỆ THỐNG QUẢN LÝ TÌNH TRẠNG VỆ SINH AN TOÀN THỰC PHẨM</h2>
+            <h3>CHỢ BẮC MỸ AN, THÀNH PHỐ ĐÀ NẴNG</h3>
         </div>
     );
 }
- 
+
 export default Home;

@@ -60,9 +60,8 @@ const User = () => {
                     <div className='top-body'>
                         <Link class="btn btn-success" to="/user/create">Add User (+)</Link>
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="search">Search:</label>
-                            <input placeholder='Tìm kiếm' type="text" id="search" value={inputSearch} onChange={handleSearch} />
-                            <button type="submit">Submit</button>
+                            <input placeholder='Tìm kiếm User' type="text" id="search" value={inputSearch} onChange={handleSearch} />
+                            <button type="submit">Tìm kiếm</button>
                         </form>
                     </div>
                     <div className="table-height" >

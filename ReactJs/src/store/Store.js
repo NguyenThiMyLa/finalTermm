@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './store.css';
 import {ToastContainer, toast } from 'react-toastify';
+import moment from 'moment';
 
 
 const Store = () => {
@@ -55,12 +56,11 @@ const Store = () => {
                     <h2>Danh sách cửa hàng</h2>
                 </div>
                 <div class="card-body">
-                    <div>
+                    <div className='top-body'>
                         <Link class="btn btn-success btn-addStore" to="/store/create">Thêm cửa hàng (+)</Link>
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="search">Search:</label>
-                            <input placeholder='Tìm kiếm' type="text" id="search" value={inputSearch} onChange={handleSearch} />
-                            <button type="submit">Submit</button>
+                            <input placeholder='Tìm kiếm cửa hàng' type="text" id="search" value={inputSearch} onChange={handleSearch} />
+                            <button type="submit">Tìm kiếm</button>
                         </form>
                     </div>
                     <div className="table-height">
@@ -87,7 +87,7 @@ const Store = () => {
                                             <td class="body-tableStore">{item?.Name}</td>
                                             <td class="body-tableStore">{item?.Address}</td>
                                             <td class="body-tableStore">{item?.PhoneNumber}</td>
-                                            <td class="body-tableStore">{item?.BusinessStartDate}</td>
+                                            <td class="body-tableStore">{moment(item?.BusinessStartDate, 'YYYY-MM-DDTHH:mm:ss').format('DD-MM-YYYY')}</td>
                                             <td class="body-tableStore">{item?.BusinessLicense}</td>
                                             <td class="body-tableStore">{item?.TaxCode}</td>
                                             <td class="body-tableStore">

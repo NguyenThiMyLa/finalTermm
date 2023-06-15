@@ -48,23 +48,22 @@ const EvaluateStore = () => {
             StoreId: StoreId,
             ConditionSafeIds: ConditionSafeId
         };
-        console.log(detailConditionobj);
         fetch(variables.API_URL + 'DetailCondition', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(detailConditionobj)
         })
-            .then(response => {
-                if (response.ok) {
-                    toast.success('Added Successfully');
-                    navigate('/appraisal/storeAppraisalDetail/' + detailConditionobj.StoreId);
-                } else {
-                    toast.error('An error occurred');
-                }
-            })
-            .catch(error => {
-                console.log(error.message);
-            });
+        .then(response => {
+            if (response.ok) {
+                toast.success('Added Successfully');
+                navigate('/appraisal/');
+            } else {
+                toast.error('An error occurred');
+            }
+        })
+        .catch(error => {
+            console.log(error.message);
+        });
     };
 
     return (
@@ -76,7 +75,7 @@ const EvaluateStore = () => {
                 <div className="card-body">
                     <form onSubmit={handleSubmit}>
                         <div className="criteria">
-                            <p className="sub-title">1. Địa điểm cơ sở sơ chế biến rau củ quả</p>
+                            <p className="sub-title">1.  Điều kiện bảo đảm an toàn thực phẩm đối với nơi chế biến, kinh doanh dịch vụ ăn uống</p>
                             {EvaluateStoreList.map(item => {
                                 if (item?.Type === 1) {
                                     return (
@@ -96,7 +95,7 @@ const EvaluateStore = () => {
                         </div>
 
                         <div className="criteria">
-                            <p className="sub-title">2. Bố trí mặt bằng cơ sở sản xuất, kinh doanh</p>
+                            <p className="sub-title">2. Điều kiện bảo đảm an toàn thực phẩm đối với cơ sở chế biến, kinh doanh dịch vụ ăn uống</p>
                             {EvaluateStoreList.map(item => {
                                 if (item?.Type === 2) {
                                     return (
@@ -116,7 +115,7 @@ const EvaluateStore = () => {
                         </div>
 
                         <div className="criteria">
-                            <p className="sub-title">3. Hệ thống cung cấp nước và điện trong cơ sở sản xuất, kinh doanh</p>
+                            <p className="sub-title">3. Điều kiện bảo đảm an toàn thực phẩm trong chế biến và bảo quản thực phẩm</p>
                             {EvaluateStoreList.map(item => {
                                 if (item?.Type === 3) {
                                     return (
@@ -136,7 +135,7 @@ const EvaluateStore = () => {
                         </div>
 
                         <div className="criteria">
-                            <p className="sub-title">4. Trang thiết bị, phương tiện dụng cụ sản xuất, kinh doanh rau củ quả</p>
+                            <p className="sub-title">4. Điều kiện bảo đảm an toàn thực phẩm đối với nguyên liệu, dụng cụ ăn uống, chứa đựng thực phẩm và người kinh doanh thức ăn đường phố</p>
                             {EvaluateStoreList.map(item => {
                                 if (item?.Type === 4) {
                                     return (
@@ -154,47 +153,6 @@ const EvaluateStore = () => {
                                 return null;
                             })}
                         </div>
-
-                        <div className="criteria">
-                            <p className="sub-title">5. Yêu cầu vệ sinh an toàn trong sản xuất và bốc dỡ, vận chuyển rau củ quả</p>
-                            {EvaluateStoreList.map(item => {
-                                if (item?.Type === 5) {
-                                    return (
-                                        <div key={item?.Id}>
-                                            <input
-                                                type="checkbox"
-                                                value={item?.Id}
-                                                name="EvaluateName"
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <span>{item?.Content}</span>
-                                        </div>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-
-                        <div className="criteria">
-                            <p className="sub-title">6. Yêu cầu vệ sinh nhà xưởng, thiết bị dụng cụ nhà máy sản xuất rau củ quả</p>
-                            {EvaluateStoreList.map(item => {
-                                if (item?.Type === 6) {
-                                    return (
-                                        <div key={item?.Id}>
-                                            <input
-                                                type="checkbox"
-                                                value={item?.Id}
-                                                name="EvaluateName"
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <span>{item?.Content}</span>
-                                        </div>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-
 
                         <div className="btn-send-div">
                             <button className="btn-send" type="submit">

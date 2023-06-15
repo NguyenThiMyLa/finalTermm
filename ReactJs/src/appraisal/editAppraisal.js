@@ -33,7 +33,7 @@ const EditAppraisal = () => {
             }).then(resp => {
                 const StaffList = [];
                 resp.forEach(element => {
-                    StaffList.push({value: element.Id, label: element.LastName});
+                    StaffList.push({value: element.Id, label: element.FirstName});
                 });
                 StaffUpdate(StaffList);
             }).catch((err) => {
@@ -80,7 +80,7 @@ const EditAppraisal = () => {
                             <Select
                                 options={StaffLists}
                                 placeholder="Chọn nhân viên kiểm tra"
-                                value={StaffLists.LastName}
+                                value={StaffLists.FirstName}
                                 onChange={handleSelect}
                                 isSearchable={true}
                             />

@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { variables } from '../Variables.js';
 import { ToastContainer, toast } from 'react-toastify';
 import Select from 'react-select';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import '../App.css'
 
 
@@ -16,6 +18,7 @@ const AddStore = () => {
     const [BusinessStartDate, BusinessStartDateChange] = useState('');
     const [BusinessLicense, BusinessLicenseChange] = useState('');
     const [TaxCode, TaxCodeChange] = useState('');
+    const [startDate, setStartDate] = useState(new Date());
     const [id] = useState('');
     let validate = true;
 
@@ -149,7 +152,14 @@ const AddStore = () => {
                         </div>
                         <div class="form-group">
                             <label>Ngày đăng ký bắt đầu kinh doanh</label>
-                            <input onBlur={e=>validateBusinessStartDate(e.target.value)} placeholder="Nhập ngày đăng ký bắt đầu kinh doanh của cửa hàng" onChange={e => BusinessStartDateChange(e.target.value)} value={BusinessStartDate} class="form-control"></input>
+                            <DatePicker 
+                                selected={BusinessStartDate}
+                                onChange={(date) => BusinessStartDateChange(date)}
+                                onBlur={e=>validateBusinessStartDate(e.target.value)}
+                                placeholder="Nhập ngày đăng ký bắt đầu kinh doanh của cửa hàng"
+                                value={BusinessStartDate}
+                            />
+                            {/* <input onBlur={e=>validateBusinessStartDate(e.target.value)} placeholder="Nhập ngày đăng ký bắt đầu kinh doanh của cửa hàng" onChange={e => BusinessStartDateChange(e.target.value)} value={BusinessStartDate} class="form-control"></input> */}
                         </div>
                         <div class="form-group">
                             <label>Giấy phép kinh doanh</label>

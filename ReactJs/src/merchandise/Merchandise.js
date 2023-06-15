@@ -68,12 +68,11 @@ const Merchandise = () => {
                     <h2>Danh sách hàng hóa có trong chợ</h2>
                 </div>
                 <div class="card-body">
-                    <div>
+                    <div className="top-body">
                         <Link class="btn btn-success btn-addStore" to="/merchandise/create">Thêm hàng hóa (+)</Link>
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="search">Search:</label>
-                            <input placeholder='Tìm kiếm' type="text" id="search" value={inputSearch} onChange={handleSearch} />
-                            <button type="submit">Submit</button>
+                            <input placeholder='Tìm kiếm hàng hóa' type="text" id="search" value={inputSearch} onChange={handleSearch} />
+                            <button type="submit">Tìm kiếm</button>
                         </form>
                     </div>
                     <div className="table-height">

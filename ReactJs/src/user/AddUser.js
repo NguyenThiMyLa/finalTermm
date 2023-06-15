@@ -41,7 +41,7 @@ const AddUser = () => {
                 PhoneNumber : phonenumber, 
                 Password : password,
                 Address : address,
-                RoleId : "91888b75-f38c-4ad1-90db-77e9e02f31f5"
+                RoleId : "C572C4B8-2D93-4730-B519-3A2E028FD5D0"
             })
         })
         .then(res=> {

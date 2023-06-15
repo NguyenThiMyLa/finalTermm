@@ -38,19 +38,12 @@ const Appraisal = () => {
                     <h2>Quản lý thẩm định định kỳ: Sẽ kiểm tra</h2>
                 </div>
                 <div class="card-body">
-                    <div>
-                        <Link class="btn btn-success btn-addStore" to="/store/create">Thêm cửa hàng (+)</Link>
-                    </div>
                     <div className="table-height">
                         <table class="table table-bordered">
                             <thead class="bg-dark text-white">
                                 <tr>
                                     <td class="title-tableStore">Tên cửa hàng</td>
                                     <td class="title-tableStore">Địa chỉ</td>
-                                    <td class="title-tableStore">Người kiểm tra</td>
-                                    <td class="title-tableStore">Ngày kiểm tra</td>
-                                    <td class="title-tableStore">Chỉnh sửa</td>
-                                    <td class="title-tableStore">Xóa</td>
                                 </tr>
                             </thead>
 
@@ -60,14 +53,6 @@ const Appraisal = () => {
                                         <tr key={item?.Id}>
                                             <td class="body-tableStore">{item?.Name}</td>
                                             <td class="body-tableStore">{item?.Address}</td>
-                                            <td class="body-tableStore">{item?.Checker}</td>
-                                            <td class="body-tableStore">{item?.DateCheck}</td>
-                                            <td class="body-tableStore">
-                                                <Link class="btn btn-primary" to={"/appraisal/edit/"+item?.Id}>Chỉnh sửa</Link>
-                                            </td>
-                                            <td class="body-tableStore">
-                                                <a onClick={()=>{handleRemove(item.Id)}} class="btn btn-danger">Xóa</a>
-                                            </td>
                                         </tr>
                                     ))
                                 }
