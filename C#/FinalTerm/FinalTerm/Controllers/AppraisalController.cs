@@ -27,10 +27,10 @@ namespace WebApplication1.Controllers
         public JsonResult GetAppraisal()
         {
             string query = @"
-                            select [dbo].[Appraisal].Id, [dbo].[Store].Id As StoreId, DateCheck, StaffId, [dbo].[Store].Address, [dbo].[Store].Name, [dbo].[User].LastName
+                            select [dbo].[Appraisal].Id, [dbo].[Store].Id As StoreId, DateCheck, StaffId, [dbo].[Store].Address, [dbo].[Store].Name, [dbo].[User].LastName, [dbo].[Appraisal].Evaluate
                             from [dbo].[Appraisal] inner join Store ON Store.Id = Appraisal.StoreId
 												   inner join [dbo].[User] ON [dbo].[User].Id = Appraisal.StaffId
-							where [dbo].[Appraisal].StaffId is not null and [dbo].[Appraisal].DateCheck is not null
+							where [dbo].[Appraisal].StaffId is not null and [dbo].[Appraisal].DateCheck is not null order by [dbo].[Appraisal].DateCheck desc 
                             ";
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("FinalTermAppCon");
@@ -85,7 +85,6 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-
         public JsonResult Post(Appraisal emp)
         {
             string query = @"insert into dbo.Appraisal (DateCheck,StaffId)

@@ -27,10 +27,10 @@ namespace WebApplication1.Controllers
         public JsonResult GetNotAppraisal()
         {
             string query = @"
-                            select [dbo].[Appraisal].Id, [dbo].[Store].Id As StoreId, DateCheck, StaffId, [dbo].[Store].Address, [dbo].[Store].Name
-                            from [dbo].[Appraisal] inner join Store ON Store.Id = Appraisal.StoreId
-							where [dbo].[Appraisal].StaffId is null and [dbo].[Appraisal].DateCheck is null
-                            ";
+                            SELECT *
+                            FROM Store
+                            LEFT JOIN Appraisal ON Store.Id = Appraisal.StoreId
+                            WHERE Appraisal.StoreId IS NULL;";
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("FinalTermAppCon");
             SqlDataReader myReader;

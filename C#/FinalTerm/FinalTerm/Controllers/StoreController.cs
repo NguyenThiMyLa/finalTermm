@@ -195,10 +195,12 @@ namespace WebApplication1.Controllers
         public JsonResult Delete(string id)
         {
             string query = @"
-                            delete from dbo.StoreMerchandise
+                            delete from dbo.Appraisal
                             where StoreId=@Id
-                            delete from dbo.Store
-                            where Id=@Id                           
+                            delete from dbo.Store   
+                            where Id=@Id
+                            delete from dbo.DetailCondition
+                            where StoreId=@Id
                             ";
 
             DataTable table = new DataTable();
